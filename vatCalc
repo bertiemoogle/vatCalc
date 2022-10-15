@@ -1,0 +1,9 @@
+gross_figure = float(input("Enter gross figure: "))
+
+vat_figure = round(gross_figure / 6, 2)
+print("VAT: ", (vat_figure))
+net_figure = round(gross_figure - vat_figure, 2)
+print("Net: ", net_figure)
+
+if vat_figure + net_figure != gross_figure:
+    print("DANGER, WILL ROBINSON!!!")
