@@ -4,7 +4,7 @@ gross_figure = input("Enter gross figure: ")
 gross_figure = D(gross_figure)
 
 vat_figure = D(round(gross_figure / 6, 2))
-print("VAT: ", (vat_figure))
+print("VAT: ", vat_figure)
 
 net_figure = D(round(gross_figure - vat_figure, 2))
 print("Net: ", net_figure)
